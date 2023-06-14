@@ -3,7 +3,7 @@
   --header-color-background: #01324a;
   --button-blue-background: #049db5;
   --hover-button-blue: #058498;
-  --font-gray-color: #35526a;
+  --font-gray-color: #4D6476;
   --font-size: 14px;
   --font-size-m: 18px;
   --font-size-l: 27px;
@@ -15,7 +15,76 @@
   --mobile-font-size-xxl: 32px;
 }
 
+/* General Settings */
+
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container__header {
+  display: grid;
+  place-content: center;
+}
+
+.text--xxl {
+  font-size: var(--font-size-xxl);
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--l{
+  font-size: var(--font-size-l);
+}
+/* Header */
+
+main {
+  background-color: var(--header-color-background);
+  color: var(--white-color)
+}
+
+.container__logo {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__navigationMenu{
+    width: 75%;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.action--button{
+  background-color: var(--button-blue-background);
+  cursor: pointer;
+  color: var(--white-color);
+  border-color: rgba(0,0,0,.1);
+  border-radius: 1em;
+  padding: 0.25rem 0.75rem;
+  font-size: var(--font-size-m);
+  width: 120px;
+}
+
+.container__mainInfo{
+  padding: 60px 0 50px 0;
+  max-width: 900px;
+}
+
+#mainDescription{
+  color: var(--font-gray-color)
+}
+
+.container__buttons{
+  display: flex;
+  justify-content: space-evenly;
 }
