@@ -41,14 +41,15 @@ body {
   font-size: var(--font-size-l);
 }
 
-.text--m{
+.text--m {
   font-size: var(--font-size-m);
 }
+
 /* Header */
 
 main {
   background-color: var(--header-color-background);
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 .container__logo {
@@ -74,7 +75,7 @@ main {
   background-color: var(--button-blue-background);
   cursor: pointer;
   color: var(--white-color);
-  border-color: rgba(0,0,0,.1);
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   padding: 0.25rem 0.75rem;
   font-size: var(--font-size-m);
@@ -87,7 +88,7 @@ main {
 }
 
 #mainDescription {
-  color: var(--font-gray-color)
+  color: var(--font-gray-color);
 }
 
 .container__buttons {
@@ -110,12 +111,8 @@ main {
   max-width: 600px;
 }
 
-.services--description {
-  color: var(--font-gray-color);
-}
-
 .services--title {
-  color: var(--header-color-background)
+  color: var(--header-color-background);
 }
 
 .services__container {
@@ -128,21 +125,18 @@ main {
   justify-items: center;
 }
 
-.services--center{
+.services--center {
   padding: 75px;
   text-align: center;
-}
-
-.services--intro {
-  color: var(--white-color)
-}
-
-.services--center {
   max-width: 300px;
 }
 
+.services--intro {
+  color: var(--white-color);
+}
+
 .services--description {
-  color: var(--font-light-gray-color)
+  color: var(--font-light-gray-color);
 }
 
 .service--image {
