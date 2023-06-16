@@ -80,6 +80,7 @@ main {
   padding: 0.25rem 0.75rem;
   font-size: var(--font-size-m);
   width: 120px;
+  transition: 1s ease;
 }
 
 .container__mainInfo {
@@ -95,6 +96,13 @@ main {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* Hover for Header Buttons */
+
+.action--button:hover{
+  background-color: var(--hover-button-blue);
+}
+
 
 /* Services Section */
 
@@ -148,11 +156,40 @@ main {
 
 .learn-more--button {
   padding: 16px 32px;
-  border: 1px solid var(--white-color);
+  border: 1px solid var(--font-light-gray-color);
   border-radius: 40px;
   color: var(--white-color);
   background-color: var(--header-color-background);
   font-size: var(--font-size);
   font-weight: bold;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.tech__container {
+  text-align: center;
+  padding: 90px 0 90px 0;
+  width: 100%;
+}
+
+.technologies--icons{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+/* Hover for Buttons */
+.learn-more--button:hover {
+  border: 1px solid var(--white-color);
+}
+
+/* Hover for incons*/
+
+.icon--tech {
+  transition: transform 0.3 s ease;
+}
+
+.icon--tech:hover{
+  transform: scale(1.2);
 }
