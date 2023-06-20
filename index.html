@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header and Navigation Section -->
     <main class="container__mainBox">
         <header class="container__header">
             <section class="container__logo">
@@ -36,6 +37,7 @@
             </section>
         </header>
     </main>
+    <!-- Services and Technologies Section -->
     <section class="container__services " id="Services">
         <article class="introduction__services">
             <h2 class="text--l services--title">Your Dedicated Web Design & Development Team</h2>
@@ -58,6 +60,60 @@
                    let us help you.</p>
                 <button class="learn-more--button">Learn More...</button>
             </div>
+        </article>
+        <article class="tech__container">
+            <h2 class="text--l services--title">Technologies We Use</h2>
+            <ul class="technologies--icons">
+                <li><img src="assets/figma.svg" class="icon--tech"></li>
+                <li><img src="assets/wordpress.svg" class="icon--tech"></li>
+                <li><img src="assets/woo.svg" class="icon--tech"></li>
+                <li><img src="assets/shopify.svg" class="icon--tech"></li>
+                <li><img src="assets/vue.svg" class="icon--tech"></li>
+                <li><img src="assets/laravel.svg" class="icon--tech"></li>
+            </ul>
+        </article>
+    </section>
+    <!-- Our Work Section / Portfolio -->
+    <section class="portfolio__background" >
+        <div class="portfolio__section">
+            <article class="portfolio--intro">
+                <h2 class="text--xxl portfolio--title">Recent Projects</h2>
+            </article>
+            <article class="portfolio--item">
+                <img src="assets/projectOne.png" class="portfolio--image">
+            </article>
+            <article class="portfolio--item">
+                <img src="assets/projectTwo.png" class="portfolio--image">
+            </article>
+            <article class="portfolio--item">
+                <img src="assets/projectThree.png" class="portfolio--image">
+            </article>
+            <article class="portfolio--item">
+                <img src="assets/projectFour.png" class="portfolio--image">
+            </article>
+        </div>
+    </section>
+    <!-- Contact us section -->
+    <section class="contactUs__Section">
+        <article class="background__form">
+          <h2 class="text--xl text--center" id="formTitle">Want to see if Icepick is the right fit for you?</h2>
+          <p class="text--center text--l" id="formDescription">Leave us your name, email and a brief description of your company and we'll be with you ASAP...</p>
+          <form class="form__section">
+            <div class="form__column name--form">
+              <label for="fName">Name</label>
+              <input type="text" id="fName" name="name" placeholder="Your name..." class="input--text">
+            </div>
+            <div class="form__column email--form">
+              <label for="fEmail">Email</label>
+              <input type="email" id="fEmail" name="email" placeholder="info@email.com" class="input--text">
+            </div>
+            <div class="form__column textfield--form">
+              <textarea id="textComment" name="commentText" placeholder="Leave us a comment..."></textarea>
+            </div>
+            <div class="form__column submit--form">
+              <input type="submit" id="submitButton" class="action--button" value="Send" name="submit">
+            </div> 
+        </form>
         </article>
     </section> 
 </body>
