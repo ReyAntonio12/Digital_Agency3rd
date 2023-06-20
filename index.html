@@ -24,7 +24,18 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </nav>
-                <button class="action--button">Let's Talk</button>
+                <div class="icon--menu">
+                    <img src="assets/menu-2.svg" 
+                    alt="Menu Logo" 
+                    class="navbar__icon--open" 
+                    onclick="openModal()">
+
+                    <img src="assets/x.svg" 
+                    alt="Close Logo" 
+                    class="hidden navbar__icon--close"
+                    onclick="closeModal()">
+                </div>
+                <button class="action--button talk--button">Let's Talk</button>
             </section>
             <section class="container__mainInfo">
                 <h1 class="text--xxl text--center">We Design & Develop Websites That Deliver Results</h1>
@@ -142,5 +153,6 @@
             </div>
         </section>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
