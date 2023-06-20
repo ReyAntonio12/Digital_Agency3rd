@@ -45,6 +45,10 @@ body {
   font-size: var(--font-size-m);
 }
 
+.text--xl {
+  font-size: var(--font-size-xl);
+}
+
 /* Header */
 
 main {
@@ -99,10 +103,9 @@ main {
 
 /* Hover for Header Buttons */
 
-.action--button:hover{
+.action--button:hover {
   background-color: var(--hover-button-blue);
 }
-
 
 /* Services Section */
 
@@ -172,7 +175,7 @@ main {
   width: 100%;
 }
 
-.technologies--icons{
+.technologies--icons {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -180,16 +183,143 @@ main {
 }
 
 /* Hover for Buttons */
+
 .learn-more--button:hover {
   border: 1px solid var(--white-color);
 }
 
-/* Hover for incons*/
+/* Hover for incons */
 
 .icon--tech {
   transition: transform 0.3 s ease;
 }
 
-.icon--tech:hover{
+.icon--tech:hover {
   transform: scale(1.2);
+}
+
+/* Portfolio Section */
+
+.portfolio__background {
+  background-color: var(--header-color-background);
+  padding: 50px 0 50px 0;
+}
+
+.portfolio__section {
+  padding: 75px 0 75px 0;
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  place-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+.portfolio--intro {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.portfolio--item {
+  max-width: 80%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio--image {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio--title {
+  color: var(--white-color);
+  text-align: center;
+}
+
+/* Transition for Projects */
+
+.portfolio--item:hover {
+  transform: scale(1.2);
+}
+
+/* Form Section */
+
+.contactUs__Section {
+  padding: 100px 15px 100px 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.background__form {
+  background-color: var(--header-color-background);
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.form__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1);
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  gap: 15px;
+}
+
+.name--form {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.email--form {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.textfield--form {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.submit--form {
+  grid-column-start: span 2;
+  grid-row-start: span 3;
+  display: flex;
+  justify-content: center;
+}
+
+.input--text {
+  border-radius: 10px;
+  height: 50%;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+label {
+  color: var(--white-color);
+}
+
+#fName,
+#fEmail {
+  width: 99%;
+}
+
+#textComment {
+  width: 100%;
+  height: 100%;
+}
+
+#formTitle {
+  color: var(--white-color);
+}
+
+#formDescription {
+  color: var(--font-light-gray-color);
+}
+
+input::placeholder {
+  font-family: 'Nunito', sans-serif;
 }
