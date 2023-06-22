@@ -15,3 +15,16 @@ const openModal = () => {
   closeIcon.classList.remove("hidden");
   openIcon.classList.add("hidden");
 }
+
+// Scroll Events
+
+const scrollToSection = (event) => {
+  event.preventDefault();
+
+  const getTargetID = event.target.getAttribute('href');
+  const section = document.querySelector(getTargetID);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}

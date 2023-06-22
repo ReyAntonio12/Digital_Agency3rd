@@ -57,6 +57,11 @@ body {
   display: grid !important;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header */
 
 main {
@@ -424,6 +429,25 @@ input::placeholder {
 /* SAMSUNG SCREEN */
 
 @media only screen and (max-width: 570px) {
+
+
+  /* Text */
+
+  .text--xxl {
+    font-size: var(--mobile-font-size-xxl);
+  }
+  .text--l {
+    font-size: var(--mobile-font-size-l);
+  }
+  .text--m {
+    font-size: var(--mobile-font-size-m);
+  }
+  .text--xl {
+    font-size: var(--mobile-font-size-xl);
+  }
+
+  /* Responsive */
+
   .navbar__icon--open {
     display: inline-block;
     max-width: 40px;
@@ -440,6 +464,9 @@ input::placeholder {
     gap: 10px;
     position: absolute;
     left: 80px;
+    background-color: var(--hover-button-blue);
+    border-radius: 10px;
+    padding: 20px;
   }
 
   .talk--button {
@@ -449,7 +476,12 @@ input::placeholder {
   .services__container {
     grid-template-columns: 1fr;
   }
-  
+
+  .services--center {
+    padding: 50px;
+    text-align: center;
+    max-width: 300px;
+  }
 }
 
 /* TABLET SCREEN */

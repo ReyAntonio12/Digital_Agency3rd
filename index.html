@@ -18,10 +18,10 @@
                 <a><img src="assets/logo.svg" alt="Icepick Logo" id="agencyLogo" /></a>
                 <nav class="container__navigationMenu">
                     <ul class="navigation__list">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Our Work</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a href="#Home" onclick="scrollToSection(event)">Home</a></li>
+                        <li><a href="#Services" onclick="scrollToSection(event)">Services</a></li>
+                        <li><a href="#Portfolio" onclick="scrollToSection(event)">Our Work</a></li>
+                        <li><a href="#ContactUs" onclick="scrollToSection(event)">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="icon--menu">
@@ -37,7 +37,7 @@
                 </div>
                 <button class="action--button talk--button">Let's Talk</button>
             </section>
-            <section class="container__mainInfo">
+            <section class="container__mainInfo" id="Home">
                 <h1 class="text--xxl text--center">We Design & Develop Websites That Deliver Results</h1>
                 <p class="text--center text--l" id="mainDescription">Our goal is to develop simple and modern websites that are optimized for both search 
                 engines and user experience, ultimately driving more traffic and revenue to your business.</p>
@@ -85,7 +85,7 @@
         </article>
     </section>
     <!-- Our Work Section / Portfolio -->
-    <section class="portfolio__background" >
+    <section class="portfolio__background" id="Portfolio">
         <div class="portfolio__section">
             <article class="portfolio--intro">
                 <h2 class="text--xxl portfolio--title">Recent Projects</h2>
@@ -105,7 +105,7 @@
         </div>
     </section>
     <!-- Contact us section -->
-    <section class="contactUs__Section">
+    <section class="contactUs__Section" id="ContactUs">
         <article class="background__form">
           <h2 class="text--xl text--center" id="formTitle">Want to see if Icepick is the right fit for you?</h2>
           <p class="text--center text--l" id="formDescription">Leave us your name, email and a brief description of your company and we'll be with you ASAP...</p>
